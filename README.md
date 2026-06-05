@@ -52,3 +52,17 @@ Click [here](https://rhoinc.github.io/safety-delta-delta/test-page/) to open an 
 - [Configuration](https://github.com/RhoInc/safety-delta-delta/wiki/Configuration)
 - [Data Guidelines](https://github.com/RhoInc/safety-delta-delta/wiki/Data-Guidelines)
 - [Technical Documentation](https://github.com/RhoInc/safety-delta-delta/wiki/Technical-Documentation)
+
+## P004 nextgen functional requirements status
+
+This section tracks the nextgen Chart.js spike against the legacy wiki requirements. The current spike is intentionally partial; unmet items become migration backlog before any replacement release.
+
+| Requirement area | Legacy requirement summary | Spike status |
+|---|---|---|
+| Baseline/comparison controls | Select baseline and comparison visit(s); average multiple selected visits. | Partial: single baseline and comparison selectors implemented; multi-select averaging not started. |
+| X/Y measure controls | Select measures displayed on x and y axes. | Implemented in spike. |
+| Configured filters | Filter by pre-selected characteristics. | Partial: treatment-group filter implemented. |
+| Participant count | Display participants shown and percentage/total. | Partial: shown participant count implemented. |
+| Delta-delta scatter | Show change-from-baseline comparison for two measures. | Implemented as Chart.js scatter. |
+| Linked listing | Show participant records underlying selected points. | Partial: click point listing implemented. |
+| Regression coverage | Validate visit/measure/filter controls, participant count, tooltips/listing, and multi-visit averaging. | Not started; requires automated browser tests. |
